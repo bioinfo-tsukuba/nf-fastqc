@@ -52,3 +52,24 @@ nextflow run bioinfo-tsukuba/nf-fastqc -profile test,singularity
 ```
 
 iv. Start running your own analysis!
+
+## Inputs and outputs
+
+### Inputs
+
+- FASTQ files
+
+### Outputs
+
+- `fastqc_raw/`
+  - HTML reports of FastQC results for each FASTQ file
+  - `zips/`
+    - Zip files for FastQC reports.
+- `pipeline_info/`
+  - `execution_report.html`
+  - `execution_timeline.html`
+  - `execution_trace.txt`
+  - `pipeline_dag.dot`
+  - `pipeline_report.html`
+  - `pipeline_report.txt`
+- `nf-fastqc-YYYY-MM-DD-hh-mm-ss.log`
